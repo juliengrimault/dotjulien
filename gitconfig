@@ -1,6 +1,6 @@
 [user]
 	name = Julien Grimault
-	email = grimault.julien@gmail.com
+	email = grimaultjulien@gmail.com
 [alias]
 	co = checkout
     lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative 
@@ -8,10 +8,12 @@
 	diff = auto
 	status = auto
 	branch = auto
+	ui = true
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
 	editor = subl -w
 	autocrlf = input
+	quotepath = false
 [apply]
 	whitespace = nowarn
 [format]
@@ -22,6 +24,7 @@
 
 [diff]
 	tool = Kaleidoscope
+	algorithm = patience
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
@@ -33,6 +36,7 @@
 	trustExitCode = true
 [mergetool]
 	prompt = false
+	keepBackup = true
 [push]
 	default = matching
 

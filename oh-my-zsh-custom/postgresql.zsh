@@ -1,1 +1,0 @@
-PATH="/Applications/Postgres.app/Contents/MacOS/bin:/usr/local/bin:$PATH"
