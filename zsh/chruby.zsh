@@ -1,4 +1,4 @@
 # chruby
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-export RUBIES=(~/.rubies/*)
+RUBIES=(~/.rubies/*)
 chruby ruby-2.0
