@@ -3,7 +3,9 @@
 	email = grimaultjulien@gmail.com
 [alias]
 	co = checkout
-    lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative 
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  pr = pull --rebase
+
 [color]
 	diff = auto
 	status = auto
@@ -14,6 +16,7 @@
 	editor = subl -w
 	autocrlf = input
 	quotepath = false
+	trustctime = false
 [apply]
 	whitespace = nowarn
 [format]
