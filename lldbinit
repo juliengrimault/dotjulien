@@ -4,3 +4,4 @@ command alias reveal_start expr [(NSNotificationCenter*)[NSNotificationCenter de
 command alias reveal_stop expr [(NSNotificationCenter*)[NSNotificationCenter defaultCenter] postNotificationName:@"IBARevealRequestStop" object:nil];
 
 command script import ~/Library/lldb/thread_return.py
+command script import ~/.dotjulien/lldb/chisel/fblldb.py
