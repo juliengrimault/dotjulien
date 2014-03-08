@@ -13,7 +13,7 @@
 	ui = true
 [core]
 	excludesfile = <%= ENV['HOME'] %>/.gitignore
-	editor = subl -w
+	editor = mvim -f
 	autocrlf = input
 	quotepath = false
 	trustctime = false
