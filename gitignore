@@ -7,7 +7,7 @@
 *~.nib/
 build/*
 xcuserdata
-
+.idea/
 
 # osx noise
 .DS_Store
