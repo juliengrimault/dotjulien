@@ -1,0 +1,10 @@
+[localhost]
+localhost ansible_python_interpreter=/usr/local/bin/python ansible_connection=local
+
+
+
+[webservers]
+archeron ansible_ssh_host=188.226.130.241
+
+[webservers:vars]
+ansible_ssh_user=root
