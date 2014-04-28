@@ -1,6 +1,6 @@
 [user]
 	name = Julien Grimault
-	email = grimaultjulien@gmail.com
+	email = julien_grimault@apple.com
 [alias]
 	co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
@@ -12,7 +12,7 @@
 	branch = auto
 	ui = true
 [core]
-	excludesfile = <%= ENV['HOME'] %>/.gitignore
+	excludesfile = ~/.gitignore
 	editor = mvim -f
 	autocrlf = input
 	quotepath = false
@@ -21,9 +21,6 @@
 	whitespace = nowarn
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
-[github]
-	user = <%= print("GitHub Username: "); STDOUT.flush; STDIN.gets.chomp %>
-	token = <%= print("GitHub API Token: "); STDOUT.flush; STDIN.gets.chomp %>
 
 [diff]
 	tool = Kaleidoscope

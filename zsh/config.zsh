@@ -2,6 +2,9 @@
 export EDITOR="subl -w"
 export LANG="en_US.UTF-8"
 
+#Git
+export GIT_DIFF_OPTS=-u10
+
 # Paths
 export PATH="./bin:/Applications/Postgres93.app/Contents/MacOS/bin:$HOME/bin:$HOME/.rbenv/plugins/ruby-build/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/bin:$PATH"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
