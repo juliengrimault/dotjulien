@@ -5,7 +5,7 @@
 	co = checkout
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
   pr = pull --rebase
-
+  pfr = send-email --quiet --to maps-patches@patches.apple.com
 [color]
 	diff = auto
 	status = auto
@@ -13,7 +13,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = mvim -f
+	editor = vim
 	autocrlf = input
 	quotepath = false
 	trustctime = false
@@ -22,6 +22,12 @@
 [format]
 	pretty = %C(yellow)%h%Creset %s %C(red)(%an, %cr)%Creset
 
+[diff "objcpp"]
+  xfuncname = ^[-+@a-zA-Z_].*$
+[diff "objcppheader"]
+  xfuncname = ^[@a-zA-Z_].*$
+[diff "localizablestrings"]
+  textconv = "iconv -f utf-16 -t utf-8"
 [diff]
 	tool = Kaleidoscope
 	algorithm = patience
@@ -40,4 +46,11 @@
 [push]
 	default = matching
 
-
+[sendemail]
+  smtpserver = relay.apple.com
+  chainreplyto = true
+  thread = true
+  multiedit = false
+  suppresscc = all
+  assume8bitEncoding = UTF8
+  from = Julien Grimault <julien_grimault@apple.com>
