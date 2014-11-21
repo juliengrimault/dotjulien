@@ -1,0 +1,22 @@
+#compdef db
+printf "Updating Git Repos...\nPushing dir...\n"
+pushd $MAPS_SRC_DIR
+printf "\n"
+
+BRANCH="$1"
+if [[ "$BRANCH" == "" ]]; then
+        BRANCH="master"
+fi
+
+printf "Pulling from $BRANCH\n"
+
+for i in */.git; do
+        printf "$i:\n"
+        (cd "$i"/.. && git stash && git checkout "$BRANCH" && git pull && git submodule update)
+        printf "\n"
+done
+
+
+printf "Popping dir...\n"
+popd
+printf "Git Repo Update Completed.\n"
