@@ -6,7 +6,7 @@ alias rsync_maps='python $SRC_DIR/tools/rsync_maps.py'
 setopt shwordsplit
 
 #path to your source folder
-export SRC_DIR=/Volumes/Data/Users/julien/src
+export SRC_DIR=~/src
 
 #path to the MapsStack folder, which should be a top level folder in your src tree
 export MAPS_STACK_DIR=$SRC_DIR/MapsStack/
