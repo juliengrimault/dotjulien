@@ -1,0 +1,14 @@
+#path to your source folder
+export SRC_DIR=~/src
+
+#path to the MapsStack folder, which should be a top level folder in your src tree
+export MAPS_STACK_DIR=$SRC_DIR/MapsStack/
+
+#path to where SxS Xcodes should be installed
+export SXS_XCODE_DIR=/Applications/Xcode/
+
+#your OD username
+export OD_USERNAME=julien_grimault
+
+#load our helper functions
+source $SRC_DIR/MapsTools/MapsTools.bash
