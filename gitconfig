@@ -16,12 +16,14 @@
   cob = checkout -b
   # list branches sorted by last modified
   b = "!git for-each-ref --sort='-authordate' --format='%(authordate)%09%(objectname:short)%09%(refname)' refs/heads | sed -e 's-refs/heads/--'"
-  
+
   # list aliases
   la = "!git config -l | grep alias | cut -c 7-"
   lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 
   pr = pull --rebase
+ 
+  cp = cherry-pick
 
   pfr = send-email --quiet --to maps-patches@patches.apple.com
 [color]
