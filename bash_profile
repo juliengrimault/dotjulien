@@ -1,1 +1,1 @@
-source ~/.mapstool_profile
+source ~/.mapstools_profile
