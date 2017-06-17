@@ -23,18 +23,10 @@ compdef _git gs=git-status
 alias gut='git'
 
 # Editor
-alias s='subl .'
-alias e='subl . &'
-
-# Rails
-alias tlog='tail -f log/development.log'
-alias b='bundle exec'
-alias bake='bundle exec rake'
-alias bm='bin/m'
+alias a='atom .'
 
 # Mac OS X
 alias o='open .'
-alias screensaver='/System/Library/Frameworks/ScreenSaver.framework/Versions/A/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
 
 # Commands starting with % for pasting from web
 alias %=' '

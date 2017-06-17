@@ -1,5 +1,5 @@
 # Editor
-export EDITOR="subl -w"
+export EDITOR="atom -w"
 export LANG="en_US.UTF-8"
 
 #Git
