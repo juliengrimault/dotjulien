@@ -5,6 +5,9 @@ export LANG="en_US.UTF-8"
 #Git
 export GIT_DIFF_OPTS=-U999999
 
+#Homebrew
+export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
+
 # Paths
 export PATH="./bin:/Applications/Postgres93.app/Contents/MacOS/bin:$HOME/.bin:$HOME/.rbenv/plugins/ruby-build/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/bin:$PATH:$HOME/.pulse/bin:$HOME/.dotjulien/git:$HOME/.bin/arcanist/bin:$HOME/.cabal/bin"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
