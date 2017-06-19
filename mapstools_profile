@@ -12,3 +12,6 @@ export OD_USERNAME=julien_grimault
 
 #load our helper functions
 source $SRC_DIR/MapsTools/MapsTools.bash
+
+#opt out of metrics gathering
+export MAPSTOOLS_METRICS_OPT_OUT=EXIT0
