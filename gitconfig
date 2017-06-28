@@ -42,7 +42,7 @@
 	ui = true
 [core]
 	excludesfile = ~/.gitignore
-	editor = "atom -w"
+	editor = "vim"
 	autocrlf = input
 	quotepath = false
 	trustctime = false
