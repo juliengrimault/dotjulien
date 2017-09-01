@@ -11,7 +11,7 @@ if [[ $- =~ "i" ]]; then
 fi
 
 # ABSOLUTE path to your source folder
-SRC_DIR="/Volumes/Data/Users/$(who am i | awk '{print $1}')/src/"
+SRC_DIR="/Users/$(who am i | awk '{print $1}')/src/"
 export SRC_DIR
 launchctl setenv SRC_DIR "${SRC_DIR}"
 
