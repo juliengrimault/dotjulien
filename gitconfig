@@ -1,8 +1,13 @@
 [user]
+	signingkey = 3FDE2D67BACC3DEB
 	name = Julien Grimault
-	email = juelz@apple.com
+	email = grimault.julien@gmail.com
 [push]
   default = current
+[commit]
+  gpgsign = true
+[gpg]
+  program = /usr/local/bin/gpg
 [alias]
 	co = checkout
 	cm = chekcout master
