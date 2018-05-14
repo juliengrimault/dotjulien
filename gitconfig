@@ -1,6 +1,8 @@
 [user]
 	name = Julien Grimault
 	email = juelz@apple.com
+[push]
+  default = current
 [alias]
 	co = checkout
 	cm = chekcout master
@@ -72,24 +74,7 @@
 [mergetool]
 	prompt = false
 	keepBackup = true
-[push]
-	default = current
-
-[sendemail]
-  smtpserver = relay.apple.com
-  chainreplyto = true
-  thread = true
-  multiedit = false
-  suppresscc = all
-  assume8bitEncoding = UTF8
-  from = Julien Grimault <julien_grimault@apple.com>
-[difftool "sourcetree"]
-	cmd = /usr/local/bin/ksdiff -w \"$LOCAL\" \"$REMOTE\"
-	path =
 [filter "lfs"]
 	clean = git-lfs clean %f
 	smudge = git-lfs smudge %f
 	required = true
-[mergetool "sourcetree"]
-	cmd =
-	trustExitCode = true
