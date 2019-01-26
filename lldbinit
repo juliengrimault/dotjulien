@@ -1,3 +1,39 @@
-command script import /usr/local/Cellar/chisel/1.2.0/libexec/fblldb.py
+# One word aliases.
+command alias alias command alias
+alias import command script import
+alias shell platform shell
+alias history command history
+alias disable breakpoint disable
 
-command alias uikit expr @import UIKit
+# https://github.com/facebook/chisel
+import /usr/local/Cellar/chisel/1.2.0/libexec/fblldb.py
+
+alias uikit expr @import UIKit
+
+command regex let
+s/(.+): (.+) = (0x[[:xdigit:]]{10,})/call let $%1 = unsafeBitCast(%3, to: %2.self)/
+s/(.+) = (0x[[:xdigit:]]{10,})/call let $%1 = unsafeBitCast(%2, to: AnyObject.self)/
+s/(.+) = (.+)/call let $%1 = %2/
+
+# (lldb) let view: UIView = 0x76543210
+# (lldb) let view = self.view
+#
+# and later make use of that variable
+#
+# (lldb) po $view.subviews
+# (lldb) po $view.frame
+#
+
+command regex po
+s/(.*0x[[:xdigit:]]{10,}.*)/expression -l objc -O -- %1/
+s/(.*)/expression -O -- %1/
+
+
+# Convenience `help` command that works for Python API too.
+command regex h
+s/^(lldb(?:\..+)?)/script help(%1)/
+s/^(SB.+)/script help(lldb.%1)/
+s/(.*)/help %1/
+
+# Reload python modules, for lldb command development.
+command regex reload 's/(.+)/script reload(%1)/'
