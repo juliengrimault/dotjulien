@@ -41,7 +41,8 @@
 
   cp = cherry-pick
 
-  pfr = send-email --quiet --to maps-patches@patches.apple.com
+  wm = when-merged -l
+  
 [color]
 	diff = auto
 	status = auto
