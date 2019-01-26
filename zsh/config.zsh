@@ -9,7 +9,7 @@ export GIT_DIFF_OPTS=-U999999
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
 # Paths
-export PATH="./bin:/Applications/Postgres93.app/Contents/MacOS/bin:$HOME/.bin:$HOME/.rbenv/plugins/ruby-build/bin:/usr/local/sbin:/usr/local/heroku/bin:/usr/local/foreman/bin:/usr/local/bin:$PATH:$HOME/.pulse/bin:$HOME/.dotjulien/git:$HOME/.bin/arcanist/bin:$HOME/.cabal/bin"
+export PATH="./bin:$HOME/.bin:/usr/local/sbin:/usr/local/bin:$PATH:$HOME/.dotjulien/git"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 export JAVA_HOME="`/usr/libexec/java_home -v 1.7`"
