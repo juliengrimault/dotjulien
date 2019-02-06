@@ -8,6 +8,9 @@ export GIT_DIFF_OPTS=-U999999
 #Homebrew
 export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 
+#Wine
+export WINEARCH=win32
+
 # Paths
 export PATH="./bin:$HOME/.bin:/usr/local/sbin:/usr/local/bin:$PATH:$HOME/.dotjulien/git"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
