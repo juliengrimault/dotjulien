@@ -6,7 +6,7 @@ alias history command history
 alias disable breakpoint disable
 
 # https://github.com/facebook/chisel
-import /usr/local/Cellar/chisel/1.2.0/libexec/fblldb.py
+import /usr/local/Cellar/chisel/latest/libexec/fblldb.py
 
 alias uikit expr @import UIKit
 
