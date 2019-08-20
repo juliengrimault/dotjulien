@@ -11,9 +11,13 @@
 [alias]
 	co = checkout
 	cm = chekcout master
+	cob = checkout -b
+
   a = add
   ap = add -p
+
   c = commit --verbose
+
   undo = reset HEAD~1 --mixed
   amend = commit -a --amend
 
@@ -22,8 +26,9 @@
   dc = diff --cached
 
   s = status -s
-  co = checkout
-  cob = checkout -b
+
+  p = push -u
+  
 
 
   # list branches sorted by last modified
