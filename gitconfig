@@ -8,9 +8,9 @@
 [gpg]
   program = /usr/local/bin/gpg
 [alias]
-	co = checkout
-	cm = chekcout master
-	cob = checkout -b
+	sw = checkout
+	sm = chekcout master
+	swc = checkout -b
 
   a = add
   ap = add -p
