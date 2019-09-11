@@ -31,3 +31,6 @@ alias o='open .'
 # Commands starting with % for pasting from web
 alias %=' '
 alias $=' '
+
+# Swift Package manager
+alias sgp='swift package generate-xcodeproj'
