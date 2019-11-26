@@ -12,7 +12,7 @@ export HOMEBREW_CASK_OPTS="--appdir=~/Applications"
 export WINEARCH=win32
 
 # Paths
-export PATH="./bin:$HOME/.bin:/usr/local/sbin:/usr/local/bin:$PATH:$HOME/.dotjulien/git:$HOME/.local/bin"
+export PATH="./bin:$HOME/.bin:/usr/local/sbin:/usr/local/bin:$PATH:$HOME/.dotjulien/git:$HOME/.local/bin:$HOME/.xclink/bin"
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
 
 export JAVA_HOME="`/usr/libexec/java_home -v 1.7`"
