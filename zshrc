@@ -1,22 +1,21 @@
-# Set Apple Terminal.app resume directory
-if [[ $TERM_PROGRAM == "Apple_Terminal" ]] && [[ -z "$INSIDE_EMACS" ]] {
-  function chpwd {
-    local SEARCH=' '
-    local REPLACE='%20'
-    local PWD_URL="file://$HOSTNAME${PWD//$SEARCH/$REPLACE}"
-    printf '\e]7;%s\a' "$PWD_URL"
-  }
+# For sudo-ing aliases
+# https://wiki.archlinux.org/index.php/Sudo#Passing_aliases
+alias sudo='sudo '
 
-  chpwd
-}
+autoload -U compinit && compinit
 
-# Load functions and completion
-fpath=(~/.zsh/functions $fpath)
-autoload -U compinit
-compinit
-autoload -U ~/.zsh/functions/*(:t)
+# this is needed to make the `common-aliases` plugin work
+autoload -U is-at-least
 
-# Load files
-for file (~/.zsh/*.zsh) source $file
+# Use zsh-completions if it exists
+if [[ -d "/usr/local/share/zsh-completions" ]]; then
+    fpath=($fpath /usr/local/share/zsh-completions)
+fi
 
-source ~/.zsh/themes/af-magic.zsh-theme
+# Load zsh configurations
+source ~/.zsh/init.zsh
+
+# start antibody plugin manager
+source <(antibody init)
+
+antibody bundle < ~/.zsh/zsh_plugins

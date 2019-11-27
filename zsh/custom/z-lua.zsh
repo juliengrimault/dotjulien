@@ -1,3 +1,6 @@
+# https://github.com/skywind3000/z.lua
+# Faster alternative to z
+
 eval "$(lua ~/.bin/z.lua/z.lua --init zsh enhanced)"
 
 alias j='z' # because im too used to autojump

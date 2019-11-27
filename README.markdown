@@ -1,6 +1,6 @@
 # ~julien
 
-Contains my custom configuration files for zsh, vim, git, etc. The dot files are based on [Ryan Bates](http://github.com/ryanb/dotfiles)
+Contains my custom configuration files for zsh, vim, git, etc.
 
 ## Environment
 

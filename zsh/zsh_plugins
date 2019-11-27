@@ -1,0 +1,25 @@
+robbyrussell/oh-my-zsh path:plugins/command-not-found
+robbyrussell/oh-my-zsh path:plugins/common-aliases
+robbyrussell/oh-my-zsh path:plugins/colored-man-pages
+robbyrussell/oh-my-zsh path:plugins/copydir
+robbyrussell/oh-my-zsh path:plugins/copyfile
+robbyrussell/oh-my-zsh path:plugins/cp
+robbyrussell/oh-my-zsh path:plugins/docker
+robbyrussell/oh-my-zsh path:plugins/emoji-clock
+robbyrussell/oh-my-zsh path:plugins/emoji
+robbyrussell/oh-my-zsh path:plugins/encode64
+robbyrussell/oh-my-zsh path:plugins/extract
+robbyrussell/oh-my-zsh path:plugins/fzf
+robbyrussell/oh-my-zsh path:plugins/httpie
+robbyrussell/oh-my-zsh path:plugins/rsync
+robbyrussell/oh-my-zsh path:plugins/sudo
+robbyrussell/oh-my-zsh path:plugins/swiftpm
+
+djui/alias-tips
+caarlos0/zsh-mkc
+
+zsh-users/zsh-completions
+zsh-users/zsh-autosuggestions
+zsh-users/zsh-syntax-highlighting
+
+bhilburn/powerlevel9k powerlevel9k

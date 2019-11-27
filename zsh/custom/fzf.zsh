@@ -1,3 +1,5 @@
+# Fuzzy Finder https://github.com/junegunn/fzf
+
 # Setup fzf
 # ---------
 if [[ ! "$PATH" == */usr/local/opt/fzf/bin* ]]; then
