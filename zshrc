@@ -17,5 +17,4 @@ source ~/.zsh/init.zsh
 
 # start antibody plugin manager
 source <(antibody init)
-
-antibody bundle < ~/.zsh/zsh_plugins
+antibody bundle < ~/.zsh/plugins/zsh_plugins.txt
