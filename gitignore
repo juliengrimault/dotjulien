@@ -10,6 +10,7 @@ xcuserdata
 .idea/
 xcshareddata
 .build
+.swiftpm
 
 # osx noise
 .DS_Store
