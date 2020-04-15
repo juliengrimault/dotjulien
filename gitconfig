@@ -1,6 +1,7 @@
 [user]
 	name = Julien Grimault
 	email = grimault.julien@gmail.com
+	signingkey = 4ADC4D1FF4AC45F7A71AFB8B3FDE2D67BACC3DEB
 [push]
   default = current
 [commit]
@@ -8,9 +9,9 @@
 [gpg]
   program = /usr/local/bin/gpg
 [alias]
-	sw = checkout
-	sm = chekcout master
-	swc = checkout -b
+  sw = checkout
+  sm = chekcout master
+  swc = checkout -b
 
   a = add
   ap = add -p
@@ -25,8 +26,10 @@
   dc = diff --cached
 
   s = status -s
+  ss = status
 
-  p = push -u
+  p = "!f() { git push -u "${@}"; }; f"
+  sp = "!f() { git p --recurse-submodules=on-demand "${@}"; }; f" 
 
   oldest-ancestor = !zsh -c 'diff -u <(git rev-list --first-parent "${1:-master}") <(git rev-list --first-parent "${2:-HEAD}") | sed -ne \"s/^ //p\" | head -1' -
 
@@ -39,9 +42,11 @@
 
   # list aliases
   la = "!git config -l | grep alias | cut -c 7-"
-  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+  lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --submodule
 
-  pr = pull --rebase --prune
+  # Pull
+  pr = "!f() { git pull --rebase --prune "${@}"; }; f"
+  spr = "!f() { git pr "${@}" && git submodule sync --recursive && git submodule update --init --recursive; }; f"
 
   cp = cherry-pick
 
@@ -72,6 +77,7 @@
 [diff]
 	tool = Kaleidoscope
 	algorithm = patience
+	submodule = log
 [difftool "Kaleidoscope"]
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
@@ -91,3 +97,7 @@
 	process = git-lfs filter-process
 [rebase]
 	autosquash = true
+[status]
+	submoduleSummary = true
+[submodule]
+	recurse = true
