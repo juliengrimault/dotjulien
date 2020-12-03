@@ -8,7 +8,6 @@
 build/*
 xcuserdata
 .idea/
-xcshareddata
 .build
 
 # osx noise
