@@ -1,12 +1,12 @@
+settings set plugin.process.gdb-remote.packet-timeout 60
+
 # One word aliases.
 command alias alias command alias
 alias import command script import
-alias shell platform shell
-alias history command history
 alias disable breakpoint disable
 
 # https://github.com/facebook/chisel
-import /usr/local/opt/chisel/fblldb.py
+import /usr/local/opt/chisel/libexec/fblldb.py
 
 alias uikit expr @import UIKit
 
@@ -38,6 +38,5 @@ s/(.*)/help %1/
 # Reload python modules, for lldb command development.
 command regex reload 's/(.+)/script reload(%1)/'
 
-### Reveal LLDB commands support - DO NOT MODIFY
-command script import /Users/julien/Library/Application\ Support/Reveal/RevealServerCommands.py
 ###
+command script import "/Users/julien/Library/Application Support/Kaleidoscope/lldb_ksdiff.py"
