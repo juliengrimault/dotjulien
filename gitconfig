@@ -1,7 +1,6 @@
 [user]
 	name = Julien Grimault
 	email = grimault.julien@gmail.com
-	signingkey = 4ADC4D1FF4AC45F7A71AFB8B3FDE2D67BACC3DEB
 [push]
   default = current
 [commit]
