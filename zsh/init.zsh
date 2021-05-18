@@ -1,5 +1,8 @@
 SOURCE=${0%/*}
 
+# Paths
+source $SOURCE/path/paths.zsh
+
 # Aliases
 source $SOURCE/aliases/aliases.zsh
 
@@ -25,9 +28,6 @@ source $SOURCE/lib/misc.zsh
 source $SOURCE/lib/spectrum.zsh
 source $SOURCE/lib/termsupport.zsh
 source $SOURCE/lib/theme-and-appearance.zsh
-
-# Paths
-source $SOURCE/path/paths.zsh
 
 # Themes
 source $SOURCE/themes/powerlevel9k.zsh-theme
