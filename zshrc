@@ -18,3 +18,7 @@ source ~/.zsh/init.zsh
 # start antibody plugin manager
 source <(antibody init)
 antibody bundle < ~/.zsh/plugins/zsh_plugins.txt
+export PATH=$PATH:/Users/julien/.spicetify
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+

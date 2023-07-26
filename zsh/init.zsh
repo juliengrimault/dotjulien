@@ -18,6 +18,7 @@ source $SOURCE/env/env.zsh
 source $SOURCE/functions/functions.zsh
 
 # Lib
+source $SOURCE/lib/1password.zsh
 source $SOURCE/lib/clipboard.zsh
 source $SOURCE/lib/completion.zsh
 source $SOURCE/lib/git.zsh
