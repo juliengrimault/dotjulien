@@ -31,3 +31,6 @@ export PATH=$PATH:/opt/local/bin
 # Add XCLink
 export PATH=$PATH:~/.xclink/bin
 
+# Add spotify tunning
+export PATH=$PATH:~/.spicetify
+
