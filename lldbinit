@@ -5,9 +5,6 @@ command alias alias command alias
 alias import command script import
 alias disable breakpoint disable
 
-# https://github.com/facebook/chisel
-import /usr/local/opt/chisel/libexec/fblldb.py
-
 alias uikit expr @import UIKit
 
 command regex let
@@ -23,11 +20,6 @@ s/(.+) = (.+)/call let $%1 = %2/
 # (lldb) po $view.subviews
 # (lldb) po $view.frame
 #
-
-command regex po
-s/(.*0x[[:xdigit:]]{10,}.*)/expression -l objc -O -- %1/
-s/(.*)/expression -O -- %1/
-
 
 # Convenience `help` command that works for Python API too.
 command regex h
