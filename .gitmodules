@@ -1,0 +1,6 @@
+[submodule "bin/z.lua"]
+	path = bin/z.lua
+	url = git@github.com:skywind3000/z.lua.git
+[submodule "bin/git-worktree-switcher"]
+	path = bin/git-worktree-switcher
+	url = git@github.com:yankeexe/git-worktree-switcher.git
