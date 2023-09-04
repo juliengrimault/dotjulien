@@ -10,6 +10,7 @@ source $SOURCE/aliases/aliases.zsh
 source $SOURCE/custom/fzf.zsh
 source $SOURCE/custom/osx.zsh
 source $SOURCE/custom/z-lua.zsh
+source $SOURCE/custom/git-worktree.zsh
 
 # Env settings
 source $SOURCE/env/env.zsh

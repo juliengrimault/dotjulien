@@ -28,6 +28,10 @@
   s = status -s
   ss = status
 
+  wr = worktree remove
+  wa = worktree add
+  wl = worktree list
+
   p = "!f() { git push -u "${@}"; }; f"
   sp = "!f() { git p --recurse-submodules=on-demand "${@}"; }; f" 
 
@@ -82,6 +86,7 @@
 	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
 	prompt = false
+	trustExitCode = true
 [merge]
 	tool = Kaleidoscope
 [mergetool "Kaleidoscope"]
