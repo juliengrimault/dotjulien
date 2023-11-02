@@ -33,4 +33,3 @@ export PATH=$PATH:~/.xclink/bin
 
 # Add spotify tunning
 export PATH=$PATH:~/.spicetify
-
