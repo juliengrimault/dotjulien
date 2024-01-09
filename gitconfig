@@ -1,12 +1,14 @@
 [user]
 	name = Julien Grimault
 	email = julien_grimault@apple.com
+	signingkey = 495B31DEB849A2A86B14745AAE634743C3FC87F0
 [push]
   default = current
 [commit]
-  gpgsign = true
+	gpgsign = true
 [gpg]
-  program = /usr/local/bin/gpg
+	program = /usr/local/MacGPG2/bin/gpg2
+	format = openpgp
 [alias]
   sw = checkout
   sm = chekcout master
