@@ -9,7 +9,6 @@ build/*
 xcuserdata
 .idea/
 .build
-.swiftpm
 
 # osx noise
 .DS_Store

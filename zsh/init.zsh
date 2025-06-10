@@ -29,7 +29,6 @@ source $SOURCE/lib/key-bindings.zsh
 source $SOURCE/lib/misc.zsh
 source $SOURCE/lib/rust.zsh
 source $SOURCE/lib/spectrum.zsh
-source $SOURCE/lib/termsupport.zsh
 source $SOURCE/lib/theme-and-appearance.zsh
 
 # Themes

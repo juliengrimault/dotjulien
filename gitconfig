@@ -1,14 +1,13 @@
 [user]
 	name = Julien Grimault
 	email = julien_grimault@apple.com
-	signingkey = 495B31DEB849A2A86B14745AAE634743C3FC87F0
 [push]
   default = current
 [commit]
 	gpgsign = true
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
-	format = openpgp
+	format = x509
 [alias]
   sw = checkout
   sm = chekcout master
@@ -56,6 +55,10 @@
   cp = cherry-pick
 
   wm = when-merged -l
+
+  r = rebase
+  rs = rebase --skip
+  ra = rebase --abort
   
 [color]
 	diff = auto
@@ -111,3 +114,10 @@
 	rebase = true
 [init]
 	defaultBranch = main
+[credential]
+	helper = 
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[gpg "x509"]
+	program = /usr/local/bin/ac-sign

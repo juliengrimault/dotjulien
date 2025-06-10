@@ -21,3 +21,10 @@ antidote load ~/.zsh/plugins/zsh_plugins.txt
 
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+
+# bun completions
+[ -s "/Users/julien/.bun/_bun" ] && source "/Users/julien/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"

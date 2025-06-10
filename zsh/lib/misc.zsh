@@ -9,6 +9,9 @@ bindkey "^[m" copy-prev-shell-word
 setopt long_list_jobs
 
 ## pager
+# These lines ensure that:
+# •	less is used as the default pager.
+# •	When used, it preserves color output in the terminal.
 export PAGER="less"
 export LESS="-R"
 
